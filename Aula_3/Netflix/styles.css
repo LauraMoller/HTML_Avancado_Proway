@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 100;
+    text-transform: uppercase
+}
+
+.logo {
+    color: red;
+}
+
+.hero {
+    height: 450px;
+    background:
+        linear-gradient(to top, #141414, transparent),
+        url('https://picsum.photos/1200/600');
+    display: flex;
+    align-items: end;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: white;
+    color: black;
+}
+
+.secondary {
+    background-color: gray;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+.catalogo {
+    padding: 20px;
+}
+
+.carrousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.carrousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 180px;
+    transition: 0.3;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+}
+
+.card:hover {
+    transform: scale(1, 2);
+    border-radius: 6px;
+}
+
+.light {
+    background: white;
+    color: black;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netflix Clone</title>
+
+
+    <meta name="description" content="Clone Netflix interface streaming">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src https: data:; style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline'; ">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Netflix</h1>
+        <div class="actions">
+            <input type="text" id="search" placeholder="Buscar...">
+
+            <button onclick="changeTheme()">🌕</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Destaques da Semana</h2>
+                <p>Os melhores filmes separados para você</p>
+
+                <button class="btn primary">Assistir</button>
+                <button class="btn secondary">Mais info</button>
+
+            </div>
+        </section>
+        <section class="catalogo">
+            <h2>Populares</h2>
+            <div class="carrousel" id="movies"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy;2026 Netflix Clone</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
