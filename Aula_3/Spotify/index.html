@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+
+    <meta name="description" content="Clone Spotify">
+    <meta name="keywords" content="musica;player;diversao">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src https: data:; style-src 'self' unsafe-inline; script-src 'self' unsafe-inline;" >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <h1 class="logo">Spotify</h1>
+
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Buscar</li>
+                    <li>Biblioteca</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <input type="text" id="search" placeholder="Buscar Música...">
+                <button>🌕</button>
+            </header>
+            <section>
+                <h2>Playlist</h2>
+                <div class="grid" id="songs"></div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="player">
+        <div id="nowPlaying">Selecione uma música</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
